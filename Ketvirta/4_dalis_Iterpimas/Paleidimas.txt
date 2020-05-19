@@ -1,0 +1,2 @@
+gcc embeding.c $(python3-config --includes --ldflags)
+./a.out squareArea squareArea 5
