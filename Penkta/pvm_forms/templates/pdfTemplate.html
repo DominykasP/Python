@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>PDF forma</title>
+</head>
+<body>
+{% if form %}
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row" style="text-align: right">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <p class="text-left">
+                        Patvirtinta {{ form.istaiga }} direktoriaus<br>
+                        {{ form.formos_data }} isakymu Nr. {{ form.numeris }}<br>
+                        <br>
+                        <b>TVIRTINU:</b><br>
+                        {{ form.istaiga }} direktorius<br>
+                        {{ form.formos_data }}
+                    </p>
+                </div>
+            </div>
+            <div class="row" style="text-align: center">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3>
+                        <b>{{ form.istaiga }}</b>
+                    </h3>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+            <div class="row" style="text-align: center">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3>
+                        <b>MATERIALINIU VERTYBIU NURASYMO AKTAS</b>
+                    </h3>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        Komisija patvirtinta {{ form.formos_data }} isakymu Nr. {{ form.numeris }} ,,Del
+                        komisijos sudarymo materialiniu vertybiu nurasymui", komisijos nariai
+                        {% for user in form.komisijos_nariai.all %}
+                            {{ user.first_name }} {{ user.last_name }},
+                        {% endfor %}
+                        nustate, kad per {{ form.formos_data }} {{ form.vieta }} sunaudojo:
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Eil. Nr</th>
+                            <th>Materialines vertybes pavadinimas</th>
+                            <th>Mato vnt.</th>
+                            <th>Kiekis</th>
+                            <th>Kaina</th>
+                            <th>Suma su PVM EUR</th>
+                            <th>Panaudojimo tikslas ir vieta</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for pvmForm in form.pvmforms.all %}
+                            <tr>
+                                <td>{{ pvmForm.id }}</td>
+                                <td>{{ pvmForm.pavadinimas }}</td>
+                                <td>{{ pvmForm.vnt }}</td>
+                                <td>{{ pvmForm.kiekis }}</td>
+                                <td>{{ pvmForm.kaina }}</td>
+                                <td>{{ pvmForm.suma }}</td>
+                                <td>{{ pvmForm.vieta }}</td>
+                            </tr>
+                        {% endfor %}
+                        <tr>
+                            <td></td>
+                            <td>Is viso:</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>{{ total_sum }}</td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        Pagal pirkimo dokumentus:<br>
+                        {{ form.pardavejas }} PVM s.f. {{ form.serija }}
+                        Nr. {{ form.numeris }}, {{ form.pardavimo_data }}
+                    </p>
+                </div>
+            </div>
+
+
+            {% for user in form.komisijos_nariai.all %}
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>
+                            Komisijos narys
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                            _____________________
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                            {{ user.first_name }} {{ user.last_name }}
+                        </p>
+                    </div>
+                </div>
+            {% endfor %}
+            <div class="row">
+                <div class="col-md-4">
+                    <p>
+                        Mat. atsakingas
+                    </p>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <p>
+                        {{ form.atsakingas_darbuotojas.first_name }} {{ form.atsakingas_darbuotojas.last_name }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% else %}
+    <p>Tokios formos nera</p>
+{% endif %}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>

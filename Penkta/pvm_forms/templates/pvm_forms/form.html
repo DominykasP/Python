@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Forma</title>
+</head>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navigationBar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/pvm_forms/">Administruojamos formos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/accounts/logout">Atsijungti</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        {% if form %}
+            <h1 class="display-4">Forma {{ form.numeris }}</h1>
+            <a class="btn btn-primary btn-lg" href="/pvm_forms/{{ form.id }}/raw_table" role="button">Lentelė spausdinimui</a>
+            <a class="btn btn-primary btn-lg" href="/pvm_forms/{{ form.id }}/pdf" role="button">PDF failas</a>
+            <table class="table table-hover">
+                <tbody>
+                <tr>
+                    <th scope="col">Numeris</th>
+                    <td>{{ form.numeris }}</td>
+                </tr>
+                <tr>
+                    <th scope="col">Įstaiga</th>
+                    <td>{{ form.istaiga }}</td>
+                </tr>
+                <tr>
+                    <th scope="col">Formos data</th>
+                    <td>{{ form.formos_data }}</td>
+                </tr>
+                <tr>
+                    <th scope="col">Komisijos nariai</th>
+                    <td>
+                        <ol>
+                            {% for komisijos_narys in form.komisijos_nariai.all %}
+                                <li>{{ komisijos_narys.first_name }} {{ komisijos_narys.last_name }}</li>
+                            {% endfor %}
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="col">Vieta</th>
+                    <td>{{ form.vieta }}</td>
+                </tr>
+                <tr>
+                    <th scope="col">Atsakingas darbuotojas</th>
+                    <td>{{ form.atsakingas_darbuotojas.first_name }} {{ form.atsakingas_darbuotojas.last_name }}</td>
+                </tr>
+                <tr>
+                    <th scope="col">Pardavėjas</th>
+                    <td>{{ form.pardavejas }}</td>
+                </tr>
+                <tr>
+                    <th scope="col">Serija</th>
+                    <td>{{ form.serija }}</td>
+                </tr>
+                <tr>
+                    <th scope="col">Pardavimo data</th>
+                    <td>{{ form.pardavimo_data }}</td>
+                </tr>
+                </tbody>
+            </table>
+            <br/>
+            <h1 class="display-4">PVM formos</h1>
+            {% if form.pvmforms.all|length > 0 %}
+                {% for pvmForm in form.pvmforms.all %}
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="card-text table table-sm table-hover table-borderless">
+                                <tbody>
+                                <tr>
+                                    <th scope="col">Pavadinimas</th>
+                                    <td>{{ pvmForm.pavadinimas }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Vieta</th>
+                                    <td>{{ pvmForm.vieta }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Vienetai</th>
+                                    <td>{{ pvmForm.vnt }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Kiekis</th>
+                                    <td>{{ pvmForm.kiekis }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Vieneto kaina</th>
+                                    <td>{{ pvmForm.kaina }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Suma</th>
+                                    <td>{{ pvmForm.suma }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Vienetai</th>
+                                    <td>{{ pvmForm.vnt }}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>PVM formų nėra</p>
+            {% endif %}
+            <br/>
+
+            <h1 class="display-4">Pridėti naują PVM formą</h1>
+            <form action="/pvm_forms/{{ form.id }}/" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for={{ new_pvm_form.pavadinimas.id_for_label }}>{{ new_pvm_form.pavadinimas.label_tag }}</label>
+                    <input class="form-control"
+                           id="{{ new_pvm_form.pavadinimas.id_for_label }}"
+                           maxlength="200"
+                           name="{{ new_pvm_form.pavadinimas.html_name }}"
+                           value="{{ new_pvm_form.pavadinimas.value | default_if_none:"" }}"
+                           type="text">
+                </div>
+                <div class="form-group">
+                    <label for={{ new_pvm_form.vieta.id_for_label }}>{{ new_pvm_form.vieta.label_tag }}</label>
+                    <input class="form-control"
+                           id="{{ new_pvm_form.vieta.id_for_label }}"
+                           maxlength="200"
+                           name="{{ new_pvm_form.vieta.html_name }}"
+                           value="{{ new_pvm_form.vieta.value | default_if_none:"" }}"
+                           type="text">
+                </div>
+                <div class="form-group">
+                    <label for={{ new_pvm_form.vnt.id_for_label }}>{{ new_pvm_form.vnt.label_tag }}</label>
+                    <input class="form-control"
+                           id="{{ new_pvm_form.vnt.id_for_label }}"
+                           maxlength="200"
+                           name="{{ new_pvm_form.vnt.html_name }}"
+                           value="{{ new_pvm_form.vnt.value | default_if_none:"" }}"
+                           type="text">
+                </div>
+                <div class="form-group">
+                    <label for={{ new_pvm_form.kiekis.id_for_label }}>{{ new_pvm_form.kiekis.label_tag }}</label>
+                    <input class="form-control"
+                           id="{{ new_pvm_form.kiekis.id_for_label }}"
+                           maxlength="200"
+                           name="{{ new_pvm_form.kiekis.html_name }}"
+                           value="{{ new_pvm_form.kiekis.value | default_if_none:"" }}"
+                           type="number">
+                </div>
+                <div class="form-group">
+                    <label for={{ new_pvm_form.suma.id_for_label }}>{{ new_pvm_form.suma.label_tag }}</label>
+                    <input class="form-control"
+                           id="{{ new_pvm_form.suma.id_for_label }}"
+                           maxlength="200"
+                           name="{{ new_pvm_form.suma.html_name }}"
+                           value="{{ new_pvm_form.suma.value | default_if_none:"" }}"
+                           type="number">
+                </div>
+                <button type="submit" class="btn btn-primary">Išsaugoti</button>
+            </form>
+        {% else %}
+            <h1 class="display-4">404: Tokios formos nėra</h1>
+        {% endif %}
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

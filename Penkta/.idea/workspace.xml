@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8763a496-7ef4-40d5-9d32-a49700bfd59f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Penkta.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Penkta/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Penkta/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Penkta/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Penkta/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Penkta/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/migrations/0002_auto_20200521_0027.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/migrations/0003_remove_form_komisijos_narys.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/migrations/0004_auto_20200521_0128.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/migrations/0005_auto_20200521_0350.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/migrations/0006_auto_20200521_0350.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/templates/pdfTemplate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/templates/pvm_forms/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/templates/pvm_forms/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pvm_forms/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration/templates/registration/logged_out.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration/templates/registration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration/templates/registration/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registration/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1cAon3wU18Qpnwykoujaa6hFGZx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pvm_forms/static" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\domin\OneDrive\Dokumentai\Studijos\6 pusmetis\Programavimas PYTHON\Pratybos\Uzduotys\Python\Penkta\pvm_forms\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\domin\OneDrive\Dokumentai\Studijos\6 pusmetis\Programavimas PYTHON\Pratybos\Uzduotys\Python\Penkta\pvm_forms\static" />
+      <recent name="C:\Users\domin\OneDrive\Dokumentai\Studijos\6 pusmetis\Programavimas PYTHON\Pratybos\Uzduotys\Python\Penkta\registration\templates\registration" />
+      <recent name="C:\Users\domin\OneDrive\Dokumentai\Studijos\6 pusmetis\Programavimas PYTHON\Pratybos\Uzduotys\Python\Penkta\pvm_forms\templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Penkta" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Penkta" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Penkta.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8763a496-7ef4-40d5-9d32-a49700bfd59f" name="Default Changelist" comment="" />
+      <created>1589980922147</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589980922147</updated>
+      <workItem from="1589980992314" duration="3885000" />
+      <workItem from="1589986323756" duration="3000" />
+      <workItem from="1589986331286" duration="42509000" />
+      <workItem from="1590039249397" duration="33000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="94" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589986347486">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="94" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1589986347486" />
+    <state x="94" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3840.0.1920.1060/0.0.2560.1400@0.0.2560.1400" timestamp="1589982990562" />
+    <state x="1010" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590029997613">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1010" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1590029997613" />
+    <state x="420" y="458" key="FileChooserDialogImpl" timestamp="1589988775059">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="420" y="458" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1589988775059" />
+    <state x="420" y="458" key="FileChooserDialogImpl/-3840.0.1920.1060/0.0.2560.1400@0.0.2560.1400" timestamp="1589982765349" />
+    <state width="2517" height="335" key="GridCell.Tab.0.bottom" timestamp="1590031355275">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="335" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1590021652606" />
+    <state width="2517" height="335" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1590031355275" />
+    <state width="1234" height="400" key="GridCell.Tab.0.bottom/-3840.0.1920.1060/0.0.2560.1400@0.0.2560.1400" timestamp="1589986169077" />
+    <state width="2517" height="335" key="GridCell.Tab.0.center" timestamp="1590031355275">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="335" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1590021652606" />
+    <state width="2517" height="335" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1590031355275" />
+    <state width="1234" height="400" key="GridCell.Tab.0.center/-3840.0.1920.1060/0.0.2560.1400@0.0.2560.1400" timestamp="1589986169076" />
+    <state width="2517" height="335" key="GridCell.Tab.0.left" timestamp="1590031355275">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="335" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1590021652606" />
+    <state width="2517" height="335" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1590031355275" />
+    <state width="1234" height="400" key="GridCell.Tab.0.left/-3840.0.1920.1060/0.0.2560.1400@0.0.2560.1400" timestamp="1589986169075" />
+    <state width="2517" height="335" key="GridCell.Tab.0.right" timestamp="1590031355275">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="335" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1590021652606" />
+    <state width="2517" height="335" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1590031355275" />
+    <state width="1234" height="400" key="GridCell.Tab.0.right/-3840.0.1920.1060/0.0.2560.1400@0.0.2560.1400" timestamp="1589986169076" />
+    <state width="2517" height="335" key="GridCell.Tab.1.bottom" timestamp="1590031355275">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="335" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1590024253259" />
+    <state width="2517" height="335" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1590031355275" />
+    <state width="2517" height="335" key="GridCell.Tab.1.center" timestamp="1590031355275">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="335" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1590024253259" />
+    <state width="2517" height="335" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1590031355275" />
+    <state width="2517" height="335" key="GridCell.Tab.1.left" timestamp="1590031355275">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="335" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1590024253258" />
+    <state width="2517" height="335" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1590031355275" />
+    <state width="2517" height="335" key="GridCell.Tab.1.right" timestamp="1590031355275">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="335" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1590024253259" />
+    <state width="2517" height="335" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1590031355275" />
+    <state x="781" y="344" key="SettingsEditor" timestamp="1590027902058">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="781" y="344" key="SettingsEditor/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1590027902058" />
+    <state x="885" y="310" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589992751359">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="885" y="310" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/-1920.0.1920.1040/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1589992751359" />
+    <state x="987" y="433" width="742" height="534" key="find.popup" timestamp="1590021844525">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="987" y="433" width="742" height="534" key="find.popup/-1920.0.1920.1040/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1590021844525" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1589990877037">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1589990877037" />
+  </component>
+</project>
